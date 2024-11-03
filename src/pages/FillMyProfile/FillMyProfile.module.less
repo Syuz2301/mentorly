@@ -1,0 +1,112 @@
+@import '../../index.css';
+
+.ant-form-item {
+  margin-bottom: 10px !important;
+}
+
+.form {
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+.site_layout {
+  height: 600px;
+  height: calc(100vh - 115px);
+  background: var(--app-background-color) !important;
+  margin-top: 164px;
+  padding: 0 50px;
+  margin-top: 0 !important;
+  overflow-y: auto;
+}
+
+[data-theme='dark'] .site_layout .site-layout-background {
+  background: #141414;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.namesContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  > div {
+    width: 265px;
+    height: 60px;
+  }
+  > .firstName {
+    margin-right: 70px;
+  }
+}
+
+.selectsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 11px;
+  position: relative;
+  > .role {
+    width: 265px;
+    margin-right: 70px;
+    height: 60px;
+  }
+  > .field {
+    width: 265px;
+  }
+}
+
+.skillsContainer {
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border: 1px solid #dbd8d8;
+  border-radius: 3px;
+  > .addSkillInput {
+    width: 15%;
+    min-width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 2px 3px 2px 3px;
+  }
+  > .newSkillBtn {
+    display: flex;
+    width: 15%;
+    min-width: 100px;
+    height: 30px;
+    margin: 2px 3px 2px 3px;
+    border-radius: 5px;
+    align-items: center;
+    &:hover {
+      color: var(--app-main-color);
+      border: 1px solid var(--app-main-color);
+    }
+  }
+}
+
+.fillMyProfileFormItem, .lastName, .firstName, .role, .field {
+  > div {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .firstName {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  .lastName {
+    width: 100% !important;
+  }
+
+  .selectsContainer > div {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+}
